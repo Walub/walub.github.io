@@ -10,9 +10,13 @@ header{
 	right: 0;
 	height: 60px;
 	background-color: rgba(0,0,0,0.6);
+	margin: 0 15px;
 }
-#menu{
-	margin-right: 10px;
+#logo{
+	color: white;
+	font-family: 'alpaca';
+	font-size: 30px;
+	margin-left: 10px;
 }
 #app{
 	width: 100%;
@@ -26,6 +30,7 @@ header{
 	height: 45vw;
 	max-height: 100vh;
 	color: white;
+	font-family: 'alpaca';
 }
 .menu-item{
 	display: block;
@@ -93,4 +98,8 @@ section{
 	font-size: 50px;
 	font-weight: 300;
 	color: #367db3;
+}
+@font-face {
+	font-family: 'alpaca';
+	src: url('fonts/ALPACA54.ttf');
 }
