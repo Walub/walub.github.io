@@ -41,7 +41,7 @@
 			</section>
 		</div>
 		<div id="footer" class="flex flex-center">
-			FYP Produced by Wallace Hsieh & Luke Chen
+			© <span id="year" style="margin: 0 3px;"></span> hacking U. All Rights Reserved by Walub.
 		</div>
 	</body>
 </html>
@@ -53,5 +53,6 @@ $(document).ready(function(){
 			scrollTop: ($($(this).attr('href')).offset().top)
 		},500);
 	});
+	$('#year').html(" "+new Date().getFullYear()+" ");
 });
 </script>
