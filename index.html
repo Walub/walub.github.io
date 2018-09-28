@@ -2,16 +2,58 @@
 <html>
 	<head>
 		<title>WALUB FYP</title>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<header>
+		<header class="flex flex-between">
+			<div id="logo">
 
+			</div>
+			<div id="menu" class="flex flex-end">
+				<div class="menu-item" href="#background" >Background</div>
+				<div class="menu-item" href="#timeline" >Timeline</div>
+				<div class="menu-item" href="" >Document</div>
+
+				<div class="menu-separator"></div>
+
+				<div class="menu-item" href="" >About</div>
+				<div class="menu-item" href="" >Contact</div>
+			</div>
 		</header>
-		<div id="app">
-			Hello
+		<div id="app" class="flex flex-col flex-start">
+			<div id="hero" class="bg-cover flex flex-center flex-col">
+				<h1>
+					We are watching.
+				</h1>
+
+			</div>
+
+			<section id="background">
+				<div class="section-title">Background</div>
+				<div class="section-content">
+
+				</div>
+			</section>
+			<section id="timeline">
+				<div class="section-title">Timeline</div>
+				<div class="section-content">
+
+				</div>
+			</section>
 		</div>
-		<div id="footer">
+		<div id="footer" class="flex flex-center">
 			FYP Produced by Wallace Hsieh & Luke Chen
 		</div>
 	</body>
 </html>
+<script>
+$(document).ready(function(){
+	$('.menu-item').on('click', function(e){
+		console.log($(this).attr('href'));
+		$('html, body').animate({
+			scrollTop: ($($(this).attr('href')).offset().top)
+		},500);
+	});
+});
+</script>
