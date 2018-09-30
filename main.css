@@ -44,6 +44,42 @@ header{
 	background-color: #367db3;
 	margin: 0 10px;
 }
+#subfooter{
+	background-color: #000033;
+}
+#subfooter section{
+	padding: 50px 0;
+}
+.profile{
+	background-color: #00004f;
+	margin: 5px;
+}
+.profile-pic{
+	width: 150px;
+	height: 150px;
+	margin: 25px;
+}
+#supervisor-profile .profile-pic{
+	background-image: url('img/drtwchim.jpg');
+}
+#member-profile > div:nth-child(1) .profile-pic{
+	background-image: url('img/luke.jpeg');
+}
+#member-profile > div:nth-child(2) .profile-pic{
+	background-image: url('img/wallace.png');
+}
+.profile-info{
+	color: dodgerblue;
+	margin-right: 20px;
+}
+.profile-info h3{
+	font-size: 28px;
+	margin: 14px 0;
+}
+.profile-info h4{
+	font-size: 20px;
+	margin: 5px 0;
+}
 #footer{
 	background-color: black;
 	height: 60px;
@@ -99,7 +135,15 @@ section{
 	font-weight: 300;
 	color: #367db3;
 }
+.section-title-s{
+	font-size: 36px;
+	font-weight: 300;
+	color: dodgerblue;
+}
 @font-face {
 	font-family: 'alpaca';
 	src: url('fonts/ALPACA54.ttf');
+}
+.txt-center{
+	text-align: center;
 }
