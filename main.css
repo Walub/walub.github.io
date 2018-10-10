@@ -11,6 +11,7 @@ header{
 	height: 60px;
 	background-color: rgba(0,0,0,0.6);
 	margin: 0 15px;
+	z-index: 20;
 }
 #logo{
 	color: white;
@@ -44,14 +45,60 @@ header{
 	background-color: #367db3;
 	margin: 0 10px;
 }
+.section-content{
+	width: 100%;
+}
+.timeline{
+	position: relative;
+	min-width: 50vw;
+}
+.timeline::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 20px auto;
+	width: 2px;
+	height: 100%;
+	background-color: #333333;
+}
+.card{
+	background-color: #051d54;
+    border-radius: 3px;
+    border: #051d54 1px solid;
+    padding: 18px;
+    width: 350px;
+    color: #03a6de;
+    margin: 50px 5px;
+}
+.timeline > .timeline-item:nth-child(2n){
+	flex-direction: row-reverse;
+}
+.bullet{
+	background-color: #03a6de;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 50%;
+	border: #03a6de 1px solid;
+	margin: auto;
+}
+.bullet:last-child{
+	animation: grow 1.5s ease-in-out infinite;
+}
 #subfooter{
-	background-color: #000033;
+	background-color: #020221;
 }
 #subfooter section{
 	padding: 50px 0;
 }
 .profile{
-	background-color: #00004f;
+	background-color: #031338;
 	margin: 5px;
 }
 .profile-pic{
@@ -143,6 +190,10 @@ section{
 @font-face {
 	font-family: 'alpaca';
 	src: url('fonts/ALPACA54.ttf');
+}
+@keyframes grow {
+    from {width: 15px; height: 15px; opacity: 1;}
+    to {width: 30px; height: 30px; opacity: 0;}
 }
 .txt-center{
 	text-align: center;
