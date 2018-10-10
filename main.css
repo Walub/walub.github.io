@@ -50,7 +50,7 @@ header{
 }
 .timeline{
 	position: relative;
-	min-width: 50vw;
+	min-width: 60vw;
 }
 .timeline::before{
 	content: "";
